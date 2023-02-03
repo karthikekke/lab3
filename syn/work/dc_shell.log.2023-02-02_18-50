@@ -1,0 +1,167 @@
+setting auto_restore_mw_cel_lib_setup true
+Initializing gui preferences from file  /u/ekke/.synopsys_dv_prefs.tcl
+dc_shell> 
+dc_shell> gui_start
+4.1
+dc_shell> read_file -format sverilog {/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1a.sv}
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/gtech.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Loading sverilog file '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1a.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/dw_foundation.sldb'
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: The following synthetic libraries should be added to 
+        the list of link libraries: 
+        'dw_foundation.sldb'. (UISN-26)
+Compiling source file /u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1a.sv
+Presto compilation completed successfully.
+Current design is now '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1a.db:adder_1a'
+Loaded 2 designs.
+Current design is 'adder_1a'.
+dc_shell> 
+Current design is 'adder_1a'.
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/generic.sdb'
+dc_shell> read_file -format sverilog {/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1b.sv}
+Loading sverilog file '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1b.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: The following synthetic libraries should be added to 
+        the list of link libraries: 
+        'dw_foundation.sldb'. (UISN-26)
+Compiling source file /u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1b.sv
+Presto compilation completed successfully.
+Current design is now '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1b.db:adder_1b'
+Warning: Overwriting design file '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder.db'. (DDB-24)
+Loaded 2 designs.
+Current design is 'adder_1b'.
+dc_shell> 
+Current design is 'adder_1b'.
+dc_shell> read_file -format sverilog {/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1c.sv}
+Loading sverilog file '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1c.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: The following synthetic libraries should be added to 
+        the list of link libraries: 
+        'dw_foundation.sldb'. (UISN-26)
+Compiling source file /u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1c.sv
+Warning:  /u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1c.sv:27: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 24 in file
+        '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1c.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            27            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Current design is now '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1c.db:adder_1c'
+Warning: Overwriting design file '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder.db'. (DDB-24)
+Loaded 2 designs.
+Current design is 'adder_1c'.
+dc_shell> 
+Current design is 'adder_1c'.
+dc_shell> read_file -format sverilog {/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1d.sv}
+Loading sverilog file '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1d.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: The following synthetic libraries should be added to 
+        the list of link libraries: 
+        'dw_foundation.sldb'. (UISN-26)
+Compiling source file /u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1d.sv
+Presto compilation completed successfully.
+Current design is now '/u/ekke/ASIC/lab3-karthikekke/syn/rtl/adder_1d.db:adder_1d'
+Loaded 1 design.
+Current design is 'adder_1d'.
+dc_shell> 
+Current design is 'adder_1d'.
+dc_shell> pwd
+/u/ekke/ASIC/lab3-karthikekke/syn/work
+dc_shell> ls
+.                   alib-52                        default.svf
+..                  dc_shell.cmd.2023-02-02_18-19  filenames.log
+.gitignore          dc_shell.cmd.2023-02-02_18-50  genus_startup.tcl
+.synopsys_dc.setup  dc_shell.log.2023-02-02_18-19
+WORK_autoread       dc_shell.log.2023-02-02_18-50
+dc_shell> cd ../
+dc_shell> ls
+.  ..  outputs  reports  rtl  scripts  work
+dc_shell> cd r
+Error: couldn't change working directory to 'r' (CMD-027)
+dc_shell> cd rtl/
+dc_shell> ls
+.                          adder_1a.sv     adder_1c_tb.sv  simple_adder.sv
+..                         adder_1a_tb.sv  adder_1d.sv     simple_and.sv
+ExampleRocketSystem.sv.gz  adder_1b.sv     adder_1d_tb.sv  tbader.sv
+MUX21X2.sv                 adder_1b_tb.sv  fifo1.sv
+ORCA_TOP.sv.gz             adder_1c.sv     fifo1_sram.sv
+dc_shell> cd ../
+dc_shell> ls
+.  ..  outputs  reports  rtl  scripts  work
+dc_shell> cd
+dc_shell> cd ASIC/lab3-karthikekke/
+dc_shell> ls
+.                                       fifo1.add_ios.tcl
+..                                      fifo1.design_config.tcl
+.git                                    fifo1.design_options.tcl
+ExampleRocketSystem.design_config.tcl   fifo1_sram.add_ios.tcl
+ExampleRocketSystem.design_options.tcl  fifo1_sram.design_config.tcl
+ORCA_TOP.design_config.tcl              fifo1_sram.design_options.tcl
+ORCA_TOP.design_options.tcl             fifo1_sram.design_options_innovus.tcl
+ORCA_TOP.dft_config.tcl                 fifo1_sram.dft_config.tcl
+README                                  fifo1_sram.dft_eco.tcl
+README.git                              lec
+README.md                               pt
+adder_1a.design_config.tcl              sim
+apr                                     simple_adder.design_config.tcl
+cadence_cap_tech                        simple_and.design_config.tcl
+constraints                             syn
+design_options_fp.tcl
+dc_shell> gvim adder_1a.design_config.tcl
+Error: unknown command 'gvim' (CMD-005)
+dc_shell> cp adder_1a.design_config.tcl adder_1b.design_config.tcl
+Error: extra positional option 'adder_1a.design_config.tcl' (CMD-012)
+Error: extra positional option 'adder_1b.design_config.tcl' (CMD-012)
+dc_shell> cp adder_1a.design_config.tcl adder_1b.design_config.tcl
+Error: extra positional option 'adder_1a.design_config.tcl' (CMD-012)
+Error: extra positional option 'adder_1b.design_config.tcl' (CMD-012)
+dc_shell> cp adder_1a.design_config.tcl adder_1b.design_config.tcl
+Error: extra positional option 'adder_1a.design_config.tcl' (CMD-012)
+Error: extra positional option 'adder_1b.design_config.tcl' (CMD-012)
+dc_shell> ls
+.                                       fifo1.add_ios.tcl
+..                                      fifo1.design_config.tcl
+.git                                    fifo1.design_options.tcl
+ExampleRocketSystem.design_config.tcl   fifo1_sram.add_ios.tcl
+ExampleRocketSystem.design_options.tcl  fifo1_sram.design_config.tcl
+ORCA_TOP.design_config.tcl              fifo1_sram.design_options.tcl
+ORCA_TOP.design_options.tcl             fifo1_sram.design_options_innovus.tcl
+ORCA_TOP.dft_config.tcl                 fifo1_sram.dft_config.tcl
+README                                  fifo1_sram.dft_eco.tcl
+README.git                              lec
+README.md                               pt
+adder_1a.design_config.tcl              sim
+apr                                     simple_adder.design_config.tcl
+cadence_cap_tech                        simple_and.design_config.tcl
+constraints                             syn
+design_options_fp.tcl
+dc_shell> cp adder_1a.design_config.tcl adder_1b.design_config.tcl
+Error: extra positional option 'adder_1a.design_config.tcl' (CMD-012)
+Error: extra positional option 'adder_1b.design_config.tcl' (CMD-012)
+dc_shell> exit
+
+Memory usage for this session 112 Mbytes.
+Memory usage for this session including child processes 112 Mbytes.
+CPU usage for this session 50 seconds ( 0.01 hours ).
+Elapsed time for this session 974 seconds ( 0.27 hours ).
+
+Thank you...
+
